@@ -2,11 +2,11 @@
 pragma solidity >= 0.7.0 < 0.9.0;
 
 contract Tether {
-    string  public name = "Mock Tether Token";
-    string  public symbol = "mUSDT";
-    uint256 public totalSupply = 1000000000000000000000000; // 1 million tokens
+    string  public name = "Fake Tether";
+    string  public symbol = "FUSDT";
+    uint256 public totalSupply = 1000000000000000000000000; // = 1,000,000.000000000000000000
     uint8   public decimals = 18;
-
+/*
     event Transfer(
         address indexed _from,
         address indexed _to, 
@@ -22,7 +22,7 @@ contract Tether {
     mapping(address => uint256) public balanceOf;
     mapping(address => mapping(address => uint256)) public allowance;
     
-    constructor() public {
+    constructor() {
         balanceOf[msg.sender] = totalSupply;
     }
 
@@ -54,4 +54,5 @@ contract Tether {
         emit Transfer(_from, _to, _value);
         return true;
     }
+*/    
 }

@@ -1,14 +1,13 @@
-import { artifacts } from "truffle";
-
-const RWD = artifacts.require("RWD");
 const Tether = artifacts.require("Tether");
-const DecentralBank = artifacts.require("DecentralBank");
+// const RWD = artifacts.require("RWD");
+// const DecentralBank = artifacts.require("DecentralBank");
 
-module.exports = async function(deployer, network, accounts) {
-  // Deploy Mock Tether Token
+module.exports = async function(deployer) {
+  // Deploy Fake Tether
   await deployer.deploy(Tether);
-  const tether = await Tether.deployed();
+  // const tether = await Tether.deployed();
 
+  /*
   // Deploy RWD Token
   await deployer.deploy(RWD);
   const rwd = await RWD.deployed();
@@ -22,4 +21,5 @@ module.exports = async function(deployer, network, accounts) {
 
   // Transfer 100 Mock Tether tokens to investor
   await tether.transfer(accounts[1], "100000000000000000000");
+   */
 };

@@ -1,7 +1,6 @@
-import { artifacts } from "truffle";
-
+/* eslint-disable no-undef */
 const Migrations = artifacts.require("Migrations");
 
-export default function(deployer) {
+module.exports = function(deployer) {
   deployer.deploy(Migrations);
-}
+};
